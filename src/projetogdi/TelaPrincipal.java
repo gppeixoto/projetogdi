@@ -26,24 +26,293 @@ public class TelaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        resultado_dialog = new javax.swing.JDialog();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        resultado_numero = new javax.swing.JTextField();
+        resultado_cpf = new javax.swing.JTextField();
+        resultado_complemento = new javax.swing.JTextField();
+        resultado_sexo = new javax.swing.JTextField();
+        resultado_nome = new javax.swing.JTextField();
+        resultado_email = new javax.swing.JTextField();
+        resultado_rua = new javax.swing.JTextField();
+        resultado_bairro = new javax.swing.JTextField();
+        resultado_expediente = new javax.swing.JTextField();
+        resultado_cidade = new javax.swing.JTextField();
+        resultado_telefone = new javax.swing.JTextField();
+        resultado_salario = new javax.swing.JTextField();
+        resultado_data_nascimento = new javax.swing.JTextField();
+        jLabel30 = new javax.swing.JLabel();
+        canvas_foto = new java.awt.Canvas();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        lista_resultados = new javax.swing.JList();
+        jLabel9 = new javax.swing.JLabel();
+        btn_consultar = new javax.swing.JButton();
+        btn_visualizar = new javax.swing.JButton();
+        text_sexo = new javax.swing.JTextField();
+        text_cpf = new javax.swing.JTextField();
+        text_nome = new javax.swing.JTextField();
+        text_data_nascimento = new javax.swing.JTextField();
+        text_expediente = new javax.swing.JTextField();
+        text_email = new javax.swing.JTextField();
+        text_rua = new javax.swing.JTextField();
+        text_bairro = new javax.swing.JTextField();
+        text_cidade = new javax.swing.JTextField();
+        text_numero = new javax.swing.JTextField();
+        text_telefone = new javax.swing.JTextField();
+        text_salario = new javax.swing.JTextField();
+        text_complemento = new javax.swing.JTextField();
+
+        resultado_dialog.setPreferredSize(new java.awt.Dimension(800, 600));
+        resultado_dialog.setResizable(false);
+        resultado_dialog.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel17.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel17.setText("FOTO");
+        resultado_dialog.getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 40, -1, -1));
+
+        jLabel18.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel18.setText("Nome:");
+        resultado_dialog.getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
+
+        jLabel19.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel19.setText("Sexo:");
+        resultado_dialog.getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, -1));
+
+        jLabel20.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel20.setText("Data de Nascimento:");
+        resultado_dialog.getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
+
+        jLabel21.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel21.setText("Email:");
+        resultado_dialog.getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+
+        jLabel22.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel22.setText("Rua:");
+        resultado_dialog.getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
+
+        jLabel23.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel23.setText("Bairro:");
+        resultado_dialog.getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, -1, -1));
+
+        jLabel24.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel24.setText("Cidade:");
+        resultado_dialog.getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
+
+        jLabel25.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel25.setText("Complemento:");
+        resultado_dialog.getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, -1));
+
+        jLabel26.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel26.setText("Telefone:");
+        resultado_dialog.getContentPane().add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, -1, -1));
+
+        jLabel27.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel27.setText("Salario:");
+        resultado_dialog.getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, -1, -1));
+
+        jLabel28.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel28.setText("Expediente:");
+        resultado_dialog.getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, -1, -1));
+
+        jLabel29.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel29.setText("Numero:");
+        resultado_dialog.getContentPane().add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, -1, -1));
+
+        resultado_numero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                resultado_numeroActionPerformed(evt);
+            }
+        });
+        resultado_dialog.getContentPane().add(resultado_numero, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 200, 110, -1));
+        resultado_dialog.getContentPane().add(resultado_cpf, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, 140, -1));
+
+        resultado_complemento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                resultado_complementoActionPerformed(evt);
+            }
+        });
+        resultado_dialog.getContentPane().add(resultado_complemento, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 290, 80, -1));
+        resultado_dialog.getContentPane().add(resultado_sexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, 30, -1));
+        resultado_dialog.getContentPane().add(resultado_nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 230, -1));
+        resultado_dialog.getContentPane().add(resultado_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 230, -1));
+        resultado_dialog.getContentPane().add(resultado_rua, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 230, -1));
+        resultado_dialog.getContentPane().add(resultado_bairro, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 230, -1));
+        resultado_dialog.getContentPane().add(resultado_expediente, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 380, 230, -1));
+        resultado_dialog.getContentPane().add(resultado_cidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, 230, -1));
+        resultado_dialog.getContentPane().add(resultado_telefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, 230, -1));
+        resultado_dialog.getContentPane().add(resultado_salario, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 350, 230, -1));
+        resultado_dialog.getContentPane().add(resultado_data_nascimento, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 110, 110, -1));
+
+        jLabel30.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel30.setText("CPF:");
+        resultado_dialog.getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+        resultado_dialog.getContentPane().add(canvas_foto, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 70, 420, 390));
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(153, 153, 255));
         setPreferredSize(new java.awt.Dimension(800, 600));
         setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
-        );
+        jLabel1.setFont(new java.awt.Font("Verdana", 0, 36)); // NOI18N
+        jLabel1.setText("Clínica Odontológica");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(229, 11, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel2.setText("CPF:");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 166, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel3.setText("Digite os filtros desejados para a consulta:");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 118, -1, -1));
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel4.setText("Nome:");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 199, -1, -1));
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel5.setText("Sexo:");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 227, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel6.setText("Data de Nascimento:");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 255, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel7.setText("Email:");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 288, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel8.setText("Rua:");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 316, -1, -1));
+
+        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel10.setText("Complemento:");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, -1, -1));
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel11.setText("Numero:");
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(341, 316, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel12.setText("Cidade:");
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 370, -1, -1));
+
+        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel13.setText("Bairro:");
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 344, -1, -1));
+
+        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel14.setText("Telefone:");
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, -1, -1));
+
+        jLabel15.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel15.setText("Salario:");
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, -1, -1));
+
+        jLabel16.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel16.setText("Expediente:");
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 490, -1, -1));
+
+        lista_resultados.setModel(new javax.swing.AbstractListModel() {
+            String[] strings = { " " };
+            public int getSize() { return strings.length; }
+            public Object getElementAt(int i) { return strings[i]; }
+        });
+        lista_resultados.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        jScrollPane1.setViewportView(lista_resultados);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(523, 166, 237, 342));
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel9.setText("Lista de Resultados");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(523, 146, -1, 14));
+
+        btn_consultar.setText("Consultar");
+        btn_consultar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_consultarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn_consultar, new org.netbeans.lib.awtextra.AbsoluteConstraints(146, 519, 116, 49));
+
+        btn_visualizar.setText("Visualizar Dados");
+        btn_visualizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_visualizarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn_visualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(585, 519, 116, 49));
+        getContentPane().add(text_sexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(95, 229, 40, -1));
+        getContentPane().add(text_cpf, new org.netbeans.lib.awtextra.AbsoluteConstraints(95, 168, 212, -1));
+        getContentPane().add(text_nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(95, 201, 212, -1));
+        getContentPane().add(text_data_nascimento, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, 129, -1));
+        getContentPane().add(text_expediente, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 490, 190, 20));
+        getContentPane().add(text_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 280, 212, -1));
+        getContentPane().add(text_rua, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 310, 212, -1));
+        getContentPane().add(text_bairro, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 340, 212, -1));
+        getContentPane().add(text_cidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 370, 212, -1));
+
+        text_numero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                text_numeroActionPerformed(evt);
+            }
+        });
+        getContentPane().add(text_numero, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 310, 70, -1));
+        getContentPane().add(text_telefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 430, 190, 20));
+        getContentPane().add(text_salario, new org.netbeans.lib.awtextra.AbsoluteConstraints(112, 460, 190, 20));
+        getContentPane().add(text_complemento, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 400, 70, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn_consultarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_consultarActionPerformed
+        // TODO add your handling code here:
+	resultado_dialog.setVisible(true);
+    }//GEN-LAST:event_btn_consultarActionPerformed
+
+    private void btn_visualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_visualizarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_visualizarActionPerformed
+
+    private void resultado_complementoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resultado_complementoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_resultado_complementoActionPerformed
+
+    private void resultado_numeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resultado_numeroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_resultado_numeroActionPerformed
+
+    private void text_numeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_text_numeroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_text_numeroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -80,5 +349,67 @@ public class TelaPrincipal extends javax.swing.JFrame {
 	});
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_consultar;
+    private javax.swing.JButton btn_visualizar;
+    private java.awt.Canvas canvas_foto;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JList lista_resultados;
+    private javax.swing.JTextField resultado_bairro;
+    private javax.swing.JTextField resultado_cidade;
+    private javax.swing.JTextField resultado_complemento;
+    private javax.swing.JTextField resultado_cpf;
+    private javax.swing.JTextField resultado_data_nascimento;
+    private javax.swing.JDialog resultado_dialog;
+    private javax.swing.JTextField resultado_email;
+    private javax.swing.JTextField resultado_expediente;
+    private javax.swing.JTextField resultado_nome;
+    private javax.swing.JTextField resultado_numero;
+    private javax.swing.JTextField resultado_rua;
+    private javax.swing.JTextField resultado_salario;
+    private javax.swing.JTextField resultado_sexo;
+    private javax.swing.JTextField resultado_telefone;
+    private javax.swing.JTextField text_bairro;
+    private javax.swing.JTextField text_cidade;
+    private javax.swing.JTextField text_complemento;
+    private javax.swing.JTextField text_cpf;
+    private javax.swing.JTextField text_data_nascimento;
+    private javax.swing.JTextField text_email;
+    private javax.swing.JTextField text_expediente;
+    private javax.swing.JTextField text_nome;
+    private javax.swing.JTextField text_numero;
+    private javax.swing.JTextField text_rua;
+    private javax.swing.JTextField text_salario;
+    private javax.swing.JTextField text_sexo;
+    private javax.swing.JTextField text_telefone;
     // End of variables declaration//GEN-END:variables
 }
