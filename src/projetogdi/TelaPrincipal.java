@@ -28,7 +28,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         resultado_dialog = new javax.swing.JDialog();
         jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
+        resultado_foto = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
@@ -54,7 +54,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
         resultado_salario = new javax.swing.JTextField();
         resultado_data_nascimento = new javax.swing.JTextField();
         jLabel30 = new javax.swing.JLabel();
-        canvas_foto = new java.awt.Canvas();
+        jLabel31 = new javax.swing.JLabel();
+        jDialog1 = new javax.swing.JDialog();
+        jLabel18 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -88,6 +90,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         text_telefone = new javax.swing.JTextField();
         text_salario = new javax.swing.JTextField();
         text_complemento = new javax.swing.JTextField();
+        btn_inserir = new javax.swing.JButton();
 
         resultado_dialog.setPreferredSize(new java.awt.Dimension(800, 600));
         resultado_dialog.setResizable(false);
@@ -97,9 +100,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jLabel17.setText("FOTO");
         resultado_dialog.getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 40, -1, -1));
 
-        jLabel18.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        jLabel18.setText("Nome:");
-        resultado_dialog.getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
+        resultado_foto.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        resultado_dialog.getContentPane().add(resultado_foto, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 130, 430, 410));
 
         jLabel19.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jLabel19.setText("Sexo:");
@@ -173,7 +175,29 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jLabel30.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jLabel30.setText("CPF:");
         resultado_dialog.getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
-        resultado_dialog.getContentPane().add(canvas_foto, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 70, 420, 390));
+
+        jLabel31.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel31.setText("Nome:");
+        resultado_dialog.getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
+
+        jLabel18.setText("SECRETÁRIO NÃO ENCONTRADO!");
+
+        javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
+        jDialog1.getContentPane().setLayout(jDialog1Layout);
+        jDialog1Layout.setHorizontalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialog1Layout.createSequentialGroup()
+                .addGap(67, 67, 67)
+                .addComponent(jLabel18)
+                .addContainerGap(167, Short.MAX_VALUE))
+        );
+        jDialog1Layout.setVerticalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialog1Layout.createSequentialGroup()
+                .addGap(52, 52, 52)
+                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(202, Short.MAX_VALUE))
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(153, 153, 255));
@@ -261,7 +285,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 btn_consultarActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_consultar, new org.netbeans.lib.awtextra.AbsoluteConstraints(146, 519, 116, 49));
+        getContentPane().add(btn_consultar, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 520, 116, 49));
 
         btn_visualizar.setText("Visualizar Dados");
         btn_visualizar.addActionListener(new java.awt.event.ActionListener() {
@@ -290,6 +314,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
         getContentPane().add(text_salario, new org.netbeans.lib.awtextra.AbsoluteConstraints(112, 460, 190, 20));
         getContentPane().add(text_complemento, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 400, 70, -1));
 
+        btn_inserir.setText("Inserir");
+        btn_inserir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_inserirActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn_inserir, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 520, 116, 49));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -313,6 +345,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void text_numeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_text_numeroActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_text_numeroActionPerformed
+
+    private void btn_inserirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_inserirActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_inserirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -350,8 +386,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_consultar;
+    private javax.swing.JButton btn_inserir;
     private javax.swing.JButton btn_visualizar;
-    private java.awt.Canvas canvas_foto;
+    private javax.swing.JDialog jDialog1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -376,6 +413,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -392,6 +430,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JDialog resultado_dialog;
     private javax.swing.JTextField resultado_email;
     private javax.swing.JTextField resultado_expediente;
+    private javax.swing.JLabel resultado_foto;
     private javax.swing.JTextField resultado_nome;
     private javax.swing.JTextField resultado_numero;
     private javax.swing.JTextField resultado_rua;
